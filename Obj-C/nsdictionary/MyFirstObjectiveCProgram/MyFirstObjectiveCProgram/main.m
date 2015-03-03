@@ -26,7 +26,7 @@ int main()
     [mutableBook setObject:@1957 forKey:@"year"];
     
     for (NSString *string in [mutableBook allKeys]){
-        printLog(string);
+        NSLog(@"key %@ value %@",string, [mutableBook objectForKey:string]);
     }
     
     printLog(mutableBook);
