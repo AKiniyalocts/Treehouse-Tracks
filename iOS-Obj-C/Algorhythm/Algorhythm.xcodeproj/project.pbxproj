@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0427B6141AA90D7E006C1ED7 /* MusicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B6131AA90D7E006C1ED7 /* MusicLibrary.m */; };
+		04C7D8AB1AA9EA1400B66CB3 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C7D8AA1AA9EA1400B66CB3 /* Playlist.m */; };
 		04D449B71AA8FBF70024FD37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D449B61AA8FBF70024FD37 /* main.m */; };
 		04D449BA1AA8FBF70024FD37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D449B91AA8FBF70024FD37 /* AppDelegate.m */; };
 		04D449BD1AA8FBF70024FD37 /* PlaylistMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D449BC1AA8FBF70024FD37 /* PlaylistMasterViewController.m */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		0427B6121AA90D7E006C1ED7 /* MusicLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicLibrary.h; sourceTree = "<group>"; };
 		0427B6131AA90D7E006C1ED7 /* MusicLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicLibrary.m; sourceTree = "<group>"; };
+		04C7D8A91AA9EA1400B66CB3 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
+		04C7D8AA1AA9EA1400B66CB3 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
 		04D449B11AA8FBF70024FD37 /* Algorhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D449B51AA8FBF70024FD37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D449B61AA8FBF70024FD37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 			children = (
 				0427B6121AA90D7E006C1ED7 /* MusicLibrary.h */,
 				0427B6131AA90D7E006C1ED7 /* MusicLibrary.m */,
+				04C7D8A91AA9EA1400B66CB3 /* Playlist.h */,
+				04C7D8AA1AA9EA1400B66CB3 /* Playlist.m */,
 				04D449B81AA8FBF70024FD37 /* AppDelegate.h */,
 				04D449B91AA8FBF70024FD37 /* AppDelegate.m */,
 				04D449BB1AA8FBF70024FD37 /* PlaylistMasterViewController.h */,
@@ -230,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D449BD1AA8FBF70024FD37 /* PlaylistMasterViewController.m in Sources */,
+				04C7D8AB1AA9EA1400B66CB3 /* Playlist.m in Sources */,
 				04D449DC1AA8FF720024FD37 /* PlaylistDetailViewController.m in Sources */,
 				04D449BA1AA8FBF70024FD37 /* AppDelegate.m in Sources */,
 				04D449B71AA8FBF70024FD37 /* main.m in Sources */,

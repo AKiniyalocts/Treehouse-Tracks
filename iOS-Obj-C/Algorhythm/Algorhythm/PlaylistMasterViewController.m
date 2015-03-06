@@ -2,12 +2,13 @@
 //  ViewController.m
 //  Algorhythm
 //
-//  Created by Anthony Kiniyalocts on 3/5/15.
-//  Copyright (c) 2015 Anthony Kiniyalocts. All rights reserved.
+//  Created by Pasan Premaratne on 1/8/15.
+//  Copyright (c) 2015 Treehouse. All rights reserved.
 //
 
 #import "PlaylistMasterViewController.h"
 #import "PlaylistDetailViewController.h"
+#import "Playlist.h"
 
 @interface PlaylistMasterViewController ()
 
@@ -17,7 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.aButton setTitle:@"Press Me!" forState:UIControlStateNormal];
+        
+    for(NSUInteger index = 0; index < self.playlistImageViews.count; index++){
+        Playlist *playlist = [[Playlist alloc]initWithIndex:index];
+        
+        UIImageView *playlistImageView = self.playlistImageViews[index];
+        
+        playlistImageView.image = playlist.playlistIcon;
+        playlistImageView.backgroundColor = playlist.backgroundColor;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,16 +35,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    //set in the storyboard on the segue
-    //can i access this programmatically, instead of with a string name??
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showPlaylistDetail"]) {
-        PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
-        playlistDetailController.segueLabelText = @"Yay! You pressed the button!";
+        UIImageView *playlistImageView = (UIImageView *)[sender view];
+        
+        if([self.playlistImageViews containsObject:playlistImageView]){
+            
+            NSUInteger *index = [self.playlistImageViews indexOfObject:playlistImageView];
+            
+            
+            PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
+            playlistDetailController.playlist = [[Playlist alloc] initWithIndex:index];
+            
+        }
+        
+        
     }
 }
+- (IBAction)showPlaylistDetail:(id)sender {
+    [self performSegueWithIdentifier:@"showPlaylistDetail" sender:sender];
+}
+
 
 
 @end
