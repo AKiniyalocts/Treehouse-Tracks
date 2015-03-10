@@ -12,6 +12,9 @@
 @interface MasterViewController ()
 
 @property NSMutableArray *objects;
+@property NSArray *categories;
+@property NSArray *walls;
+@property NSArray *names;
 @end
 
 @implementation MasterViewController
@@ -27,7 +30,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self refresh];
+    
+    
 
+}
+
+- (void)refresh {
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSString *urlString = @"http://knokfirst.com/behang_manifest.json";
+    
+    NSURL *url = [[NSURL alloc] initWithString:urlString];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+        
+        NSData *data = [[NSData alloc] initWithContentsOfURL:location];
+        NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        
+        self.categories = [responseDictionary valueForKeyPath:@"wallpapers.category"];
+        
+        self.names = [responseDictionary valueForKeyPath:@"wallpapers.category.name"];
+        
+        NSLog(@"%@", self.names);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    }];
+    [task resume];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,41 +66,49 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)insertNewObject:(id)sender {
- 
-}
 
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
+    
+    NSIndexPath *path = (NSIndexPath *) [sender view];
+    
+    self.walls = [self.categories objectAtIndex:path.row];
+    
+    NSLog(@"%@", self.walls);
+    
+    if([segue.identifier isEqualToString:@"showDetail"]){
+        DetailViewController *detailView = (DetailViewController *) segue.destinationViewController;
+        detailView.walls = [[NSArray alloc] initWithArray:self.walls];
+        
+    }
 }
 
 #pragma mark - Table View
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return [self.categories count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
+    
+    //NSLog(@"%@", [self.categories valueForKeyPath:@"name"]);
+    NSString *catName = [[NSString alloc] initWithString:[self.names objectAtIndex:indexPath.row]];
+    
+    cell.textLabel.text = catName;
+    
+    
    
     return cell;
 }
 
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [self performSegueWithIdentifier:@"showDetail" sender:indexPath];
+    
 }
+
 
 @end

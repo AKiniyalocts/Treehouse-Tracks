@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04181A581AAF893000068538 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04181A571AAF893000068538 /* PhotoCell.m */; };
 		046B3EE11AADE73400278DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3EE01AADE73400278DCD /* main.m */; };
 		046B3EE41AADE73400278DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3EE31AADE73400278DCD /* AppDelegate.m */; };
 		046B3EE71AADE73400278DCD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3EE61AADE73400278DCD /* MasterViewController.m */; };
@@ -15,7 +16,8 @@
 		046B3EEF1AADE73400278DCD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046B3EEE1AADE73400278DCD /* Images.xcassets */; };
 		046B3EF21AADE73400278DCD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046B3EF01AADE73400278DCD /* LaunchScreen.xib */; };
 		046B3EFE1AADE73400278DCD /* BehangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3EFD1AADE73400278DCD /* BehangTests.m */; };
-		046B3F451AAE396700278DCD /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3F441AAE396700278DCD /* ImageCell.m */; };
+		04832C661AAF641E0086FA2A /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04832C651AAF641E0086FA2A /* ImageCell.m */; };
+		91E7782535781D016B575CC7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4410658DD4DBC121F11EAB28 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04181A561AAF893000068538 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoCell.h; path = "../../Photo Bombers/Photo Bombers/PhotoCell.h"; sourceTree = "<group>"; };
+		04181A571AAF893000068538 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoCell.m; path = "../../Photo Bombers/Photo Bombers/PhotoCell.m"; sourceTree = "<group>"; };
 		046B3EDB1AADE73400278DCD /* Behang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Behang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B3EDF1AADE73400278DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046B3EE01AADE73400278DCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,8 +48,12 @@
 		046B3EF71AADE73400278DCD /* BehangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BehangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B3EFC1AADE73400278DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046B3EFD1AADE73400278DCD /* BehangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BehangTests.m; sourceTree = "<group>"; };
-		046B3F431AAE396700278DCD /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
-		046B3F441AAE396700278DCD /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		04832C631AAF630E0086FA2A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		04832C641AAF641E0086FA2A /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		04832C651AAF641E0086FA2A /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		4410658DD4DBC121F11EAB28 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33CF0BC40C7F9088FE10F7E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F56D9FEC062AE27C554768B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E7782535781D016B575CC7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,9 +78,12 @@
 		046B3ED21AADE73400278DCD = {
 			isa = PBXGroup;
 			children = (
+				04832C631AAF630E0086FA2A /* Podfile */,
 				046B3EDD1AADE73400278DCD /* Behang */,
 				046B3EFA1AADE73400278DCD /* BehangTests */,
 				046B3EDC1AADE73400278DCD /* Products */,
+				7C17EEADC464BBDDD9AD0EF3 /* Pods */,
+				98000FB72C4B5CC4B2247D7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +99,8 @@
 		046B3EDD1AADE73400278DCD /* Behang */ = {
 			isa = PBXGroup;
 			children = (
+				04181A561AAF893000068538 /* PhotoCell.h */,
+				04181A571AAF893000068538 /* PhotoCell.m */,
 				046B3EE21AADE73400278DCD /* AppDelegate.h */,
 				046B3EE31AADE73400278DCD /* AppDelegate.m */,
 				046B3EE51AADE73400278DCD /* MasterViewController.h */,
@@ -97,8 +111,8 @@
 				046B3EEE1AADE73400278DCD /* Images.xcassets */,
 				046B3EF01AADE73400278DCD /* LaunchScreen.xib */,
 				046B3EDE1AADE73400278DCD /* Supporting Files */,
-				046B3F431AAE396700278DCD /* ImageCell.h */,
-				046B3F441AAE396700278DCD /* ImageCell.m */,
+				04832C641AAF641E0086FA2A /* ImageCell.h */,
+				04832C651AAF641E0086FA2A /* ImageCell.m */,
 			);
 			path = Behang;
 			sourceTree = "<group>";
@@ -129,6 +143,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7C17EEADC464BBDDD9AD0EF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F56D9FEC062AE27C554768B2 /* Pods.debug.xcconfig */,
+				F33CF0BC40C7F9088FE10F7E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		98000FB72C4B5CC4B2247D7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4410658DD4DBC121F11EAB28 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046B3F011AADE73400278DCD /* Build configuration list for PBXNativeTarget "Behang" */;
 			buildPhases = (
+				0889069F45FC95D501D04CA8 /* Check Pods Manifest.lock */,
 				046B3ED71AADE73400278DCD /* Sources */,
 				046B3ED81AADE73400278DCD /* Frameworks */,
 				046B3ED91AADE73400278DCD /* Resources */,
+				C031C5BACAE464A415673ECB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,15 +258,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0889069F45FC95D501D04CA8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C031C5BACAE464A415673ECB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		046B3ED71AADE73400278DCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				046B3EE41AADE73400278DCD /* AppDelegate.m in Sources */,
-				046B3F451AAE396700278DCD /* ImageCell.m in Sources */,
+				04832C661AAF641E0086FA2A /* ImageCell.m in Sources */,
 				046B3EE71AADE73400278DCD /* MasterViewController.m in Sources */,
 				046B3EE11AADE73400278DCD /* main.m in Sources */,
+				04181A581AAF893000068538 /* PhotoCell.m in Sources */,
 				046B3EEA1AADE73400278DCD /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +425,7 @@
 		};
 		046B3F021AADE73400278DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56D9FEC062AE27C554768B2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Behang/Info.plist;
@@ -368,6 +436,7 @@
 		};
 		046B3F031AADE73400278DCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33CF0BC40C7F9088FE10F7E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Behang/Info.plist;
