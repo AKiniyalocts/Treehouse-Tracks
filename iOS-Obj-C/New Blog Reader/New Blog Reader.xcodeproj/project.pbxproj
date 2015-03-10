@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046B3F091AADE84800278DCD /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3F081AADE84800278DCD /* BlogPost.m */; };
+		046B3F0D1AAE030200278DCD /* treehouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 046B3F0C1AAE030200278DCD /* treehouse.png */; };
+		046B3F421AAE2C8D00278DCD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3F411AAE2C8D00278DCD /* WebViewController.m */; };
 		04DE3DB31AAA45AC0050CCCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE3DB21AAA45AC0050CCCC /* main.m */; };
 		04DE3DB61AAA45AC0050CCCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE3DB51AAA45AC0050CCCC /* AppDelegate.m */; };
 		04DE3DBC1AAA45AC0050CCCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DE3DBA1AAA45AC0050CCCC /* Main.storyboard */; };
@@ -27,6 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046B3F071AADE84800278DCD /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		046B3F081AADE84800278DCD /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
+		046B3F0C1AAE030200278DCD /* treehouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = treehouse.png; path = ../../../../../Downloads/BlogReader/BlogReader/treehouse.png; sourceTree = "<group>"; };
+		046B3F401AAE2C8D00278DCD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		046B3F411AAE2C8D00278DCD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		04DE3DAD1AAA45AC0050CCCC /* New Blog Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New Blog Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DE3DB11AAA45AC0050CCCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DE3DB21AAA45AC0050CCCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +97,10 @@
 				04DE3DBD1AAA45AC0050CCCC /* Images.xcassets */,
 				04DE3DBF1AAA45AC0050CCCC /* LaunchScreen.xib */,
 				04DE3DB01AAA45AC0050CCCC /* Supporting Files */,
+				046B3F071AADE84800278DCD /* BlogPost.h */,
+				046B3F081AADE84800278DCD /* BlogPost.m */,
+				046B3F401AAE2C8D00278DCD /* WebViewController.h */,
+				046B3F411AAE2C8D00278DCD /* WebViewController.m */,
 			);
 			path = "New Blog Reader";
 			sourceTree = "<group>";
@@ -96,6 +108,7 @@
 		04DE3DB01AAA45AC0050CCCC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				046B3F0C1AAE030200278DCD /* treehouse.png */,
 				04DE3DB11AAA45AC0050CCCC /* Info.plist */,
 				04DE3DB21AAA45AC0050CCCC /* main.m */,
 			);
@@ -200,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046B3F0D1AAE030200278DCD /* treehouse.png in Resources */,
 				04DE3DBC1AAA45AC0050CCCC /* Main.storyboard in Resources */,
 				04DE3DC11AAA45AC0050CCCC /* LaunchScreen.xib in Resources */,
 				04DE3DBE1AAA45AC0050CCCC /* Images.xcassets in Resources */,
@@ -221,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DE3DB61AAA45AC0050CCCC /* AppDelegate.m in Sources */,
+				046B3F421AAE2C8D00278DCD /* WebViewController.m in Sources */,
 				04DE3DD81AAA4BFF0050CCCC /* TableViewController.m in Sources */,
 				04DE3DB31AAA45AC0050CCCC /* main.m in Sources */,
+				046B3F091AADE84800278DCD /* BlogPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +437,7 @@
 				04DE3DD21AAA45AD0050CCCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04DE3DD31AAA45AD0050CCCC /* Build configuration list for PBXNativeTarget "New Blog ReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +446,7 @@
 				04DE3DD51AAA45AD0050CCCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
