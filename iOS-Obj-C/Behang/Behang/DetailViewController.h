@@ -11,7 +11,7 @@
 @interface DetailViewController : UICollectionViewController
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionGrid;
-@property (strong, nonatomic) NSArray *walls;
+@property (strong, nonatomic) NSDictionary *walls;
 
 @end
 

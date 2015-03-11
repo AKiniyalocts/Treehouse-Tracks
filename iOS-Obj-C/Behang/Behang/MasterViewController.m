@@ -52,6 +52,8 @@
         
         self.names = [responseDictionary valueForKeyPath:@"wallpapers.category.name"];
         
+        self.walls = [responseDictionary valueForKeyPath:@"wallpapers.category"];
+        
         NSLog(@"%@", self.names);
         
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -71,9 +73,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    NSIndexPath *path = (NSIndexPath *) [sender view];
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     
-    self.walls = [self.categories objectAtIndex:path.row];
+    //self.walls = [self.categories[indexPath.row];
     
     NSLog(@"%@", self.walls);
     
@@ -104,11 +106,7 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    [self performSegueWithIdentifier:@"showDetail" sender:indexPath];
-    
-}
+
 
 
 @end

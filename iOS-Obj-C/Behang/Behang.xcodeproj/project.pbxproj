@@ -18,6 +18,8 @@
 		046B3EFE1AADE73400278DCD /* BehangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3EFD1AADE73400278DCD /* BehangTests.m */; };
 		04832C661AAF641E0086FA2A /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04832C651AAF641E0086FA2A /* ImageCell.m */; };
 		91E7782535781D016B575CC7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4410658DD4DBC121F11EAB28 /* libPods.a */; };
+		92374F751AAFC3D6009711DC /* NodeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 92374F741AAFC3D6009711DC /* NodeCategory.m */; };
+		92374F781AAFC53C009711DC /* NodeWallpaper.m in Sources */ = {isa = PBXBuildFile; fileRef = 92374F771AAFC53C009711DC /* NodeWallpaper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,10 @@
 		04832C641AAF641E0086FA2A /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
 		04832C651AAF641E0086FA2A /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
 		4410658DD4DBC121F11EAB28 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		92374F731AAFC3D6009711DC /* NodeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeCategory.h; sourceTree = "<group>"; };
+		92374F741AAFC3D6009711DC /* NodeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeCategory.m; sourceTree = "<group>"; };
+		92374F761AAFC53C009711DC /* NodeWallpaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeWallpaper.h; sourceTree = "<group>"; };
+		92374F771AAFC53C009711DC /* NodeWallpaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeWallpaper.m; sourceTree = "<group>"; };
 		F33CF0BC40C7F9088FE10F7E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F56D9FEC062AE27C554768B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +119,10 @@
 				046B3EDE1AADE73400278DCD /* Supporting Files */,
 				04832C641AAF641E0086FA2A /* ImageCell.h */,
 				04832C651AAF641E0086FA2A /* ImageCell.m */,
+				92374F731AAFC3D6009711DC /* NodeCategory.h */,
+				92374F741AAFC3D6009711DC /* NodeCategory.m */,
+				92374F761AAFC53C009711DC /* NodeWallpaper.h */,
+				92374F771AAFC53C009711DC /* NodeWallpaper.m */,
 			);
 			path = Behang;
 			sourceTree = "<group>";
@@ -296,12 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92374F781AAFC53C009711DC /* NodeWallpaper.m in Sources */,
 				046B3EE41AADE73400278DCD /* AppDelegate.m in Sources */,
 				04832C661AAF641E0086FA2A /* ImageCell.m in Sources */,
 				046B3EE71AADE73400278DCD /* MasterViewController.m in Sources */,
 				046B3EE11AADE73400278DCD /* main.m in Sources */,
 				04181A581AAF893000068538 /* PhotoCell.m in Sources */,
 				046B3EEA1AADE73400278DCD /* DetailViewController.m in Sources */,
+				92374F751AAFC3D6009711DC /* NodeCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

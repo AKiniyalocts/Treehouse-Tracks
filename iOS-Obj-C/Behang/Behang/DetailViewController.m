@@ -27,6 +27,10 @@
 
 -(void)loadView{
     [self.collectionGrid registerClass:[PhotoCell class] forCellWithReuseIdentifier:@"photo"];
+    
+    //NSMutableArray *mutable = [[NSArray alloc] init];
+    
+    
 }
 
 
@@ -56,7 +60,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photo" forIndexPath:indexPath];
     
-    cell.photo = self.walls[indexPath.row];
+    //cell.photo = self.walls[indexPath.row];
     
     return cell;
 }
