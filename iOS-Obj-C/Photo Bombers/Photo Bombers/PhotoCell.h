@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NodeWallpaper.h"
 
 @interface PhotoCell : UICollectionViewCell
 
 @property (nonatomic) UIImageView *imageView;
-@property (nonatomic) NSDictionary *photo;
+@property (nonatomic) NodeWallpaper *photo;
 
 @end

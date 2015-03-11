@@ -7,10 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONModel.h"
+#import "NodeWallpaper.h"
 
-@interface NodeCategory : NSObject
+@protocol NodeCategory
 
-@property(nonatomic, strong) NSArray *wallpapers;
+@end
+
+@interface NodeCategory : JSONModel
+
+@property(nonatomic, strong) NSArray<NodeWallpaper, ConvertOnDemand> *wallpaper;
 @property(nonatomic, strong) NSString *name;
 
 @end

@@ -8,13 +8,14 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "Node.h"
+#import "NodeCategory.h"
 
 @interface MasterViewController ()
+@property Node *node;
+@property NodeSource *nodeSource;
+@property NodeCategory *nodeCategory;
 
-@property NSMutableArray *objects;
-@property NSArray *categories;
-@property NSArray *walls;
-@property NSArray *names;
 @end
 
 @implementation MasterViewController
@@ -46,15 +47,14 @@
     NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
         
         NSData *data = [[NSData alloc] initWithContentsOfURL:location];
-        NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        NSString *json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+
         
-        self.categories = [responseDictionary valueForKeyPath:@"wallpapers.category"];
+        NSError *err = nil;
+        self.node = [[Node alloc] initWithString:json error:&err];
         
-        self.names = [responseDictionary valueForKeyPath:@"wallpapers.category.name"];
+        NSLog(@"%lu", (unsigned long)self.node.wallpapers.category.count);
         
-        self.walls = [responseDictionary valueForKeyPath:@"wallpapers.category"];
-        
-        NSLog(@"%@", self.names);
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView reloadData];
@@ -74,14 +74,20 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    
-    //self.walls = [self.categories[indexPath.row];
-    
-    NSLog(@"%@", self.walls);
+    NSInteger index = indexPath.row;
+
+    self.nodeCategory = self.node.wallpapers.category[index];
+
     
     if([segue.identifier isEqualToString:@"showDetail"]){
-        DetailViewController *detailView = (DetailViewController *) segue.destinationViewController;
-        detailView.walls = [[NSArray alloc] initWithArray:self.walls];
+        //[segue.destinationViewController setNodeCategory:self.nodeCategory];
+        UINavigationController *navigationController = (UINavigationController *)segue.destinationViewController;
+        DetailViewController *detailViewController = (DetailViewController *) navigationController.topViewController;
+        
+        detailViewController.nodeCategory = self.nodeCategory;
+        
+        NSLog(@"%@", self.nodeCategory.name);
+        //detailView.nodeCategory = self.nodeCategory;
         
     }
 }
@@ -90,16 +96,21 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.categories count];
+    return [self.node.wallpapers.category count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     //NSLog(@"%@", [self.categories valueForKeyPath:@"name"]);
-    NSString *catName = [[NSString alloc] initWithString:[self.names objectAtIndex:indexPath.row]];
+    NSInteger index = indexPath.row;
+    self.nodeCategory = self.node.wallpapers.category[index];
+
+    NSString *catName = [self.nodeCategory name];
+    NSInteger count = [self.nodeCategory.wallpaper count];
     
-    cell.textLabel.text = catName;
+    NSString *formatted = [[NSString alloc] initWithFormat:@"%@ - %lu", catName, count];
+    cell.textLabel.text = formatted;
     
     
    

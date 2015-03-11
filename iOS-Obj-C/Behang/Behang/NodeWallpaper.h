@@ -7,12 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONModel.h"
 
-@interface NodeWallpaper : NSObject
+@protocol NodeWallpaper
+@end
+
+@interface NodeWallpaper : JSONModel
 
 @property(strong, nonatomic) NSString *name;
 @property(strong, nonatomic) NSString *author;
 @property(strong, nonatomic) NSString *url;
-@property(strong, nonatomic) NSString *thumburl;
+@property(strong, nonatomic) NSString *thumbUrl;
 
 @end

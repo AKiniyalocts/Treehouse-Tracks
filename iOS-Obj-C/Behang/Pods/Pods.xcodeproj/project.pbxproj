@@ -1,973 +1,640 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>05F46298335D8BDCF2D37577</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C42FA4621005515D39669502</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>09801036C4D0591AD908A1F7</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5A27A09C0D8C5B613C7AEFBB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-SAMCache/Pods-SAMCache-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>1158CFAE328197123EDA2470</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>169B5F13F97444535480CBC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C19F50857043179CF249F8E7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>19864A5D36EE988D0D6ABB8F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SAMCache.h</string>
-			<key>path</key>
-			<string>SAMCache/SAMCache.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2347B3D59EBBD961167F54ED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3278EF01AE6DB70AF9E9E975</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>763D1BC82F5FDA69C46DAE20</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>BE0E71DB7C8E238A6ABFC2F7</string>
-			<key>productRefGroup</key>
-			<string>96AF83336B3C3CD6FCF4C366</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>9A6BCB3B97F7BFE24C7654CB</string>
-				<string>4B8CF82F9D5CCE2DC365806F</string>
-			</array>
-		</dict>
-		<key>344E4C30C39C9EF1C3554855</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5A27A09C0D8C5B613C7AEFBB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-SAMCache/Pods-SAMCache-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>370F20A2E809FA45BAE08E66</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-SAMCache</string>
-			<key>target</key>
-			<string>4B8CF82F9D5CCE2DC365806F</string>
-			<key>targetProxy</key>
-			<string>D237A9A216436202217AFE32</string>
-		</dict>
-		<key>3991C62DDE76786006902F42</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B456BFA13A62931F9D852D0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AD07E6B0E0FED00F72AAC54F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>441649065264F129B0695A14</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>995FC62C1DCF885E4074C410</string>
-				<string>97496E3ED306BCE2F24DEC6D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>49DA0B80A0A7C73DFDA3B637</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FAC13A3BC54D00C7706E6AE7</string>
-				<string>5A27A09C0D8C5B613C7AEFBB</string>
-				<string>4DC038F08F7BA59376A86E14</string>
-				<string>7572F49A982430D3D7F3B482</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Pods-SAMCache</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4B8CF82F9D5CCE2DC365806F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>68D0DFDAA69593FB37087426</string>
-			<key>buildPhases</key>
-			<array>
-				<string>60B0B3E80D88E3D3AA00ED2E</string>
-				<string>E103F57A4A028D52420259B5</string>
-				<string>645B7BC470AC059F2C213AFA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-SAMCache</string>
-			<key>productName</key>
-			<string>Pods-SAMCache</string>
-			<key>productReference</key>
-			<string>A8BB0169520510D521EAAF2A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>4BE3A9DF1063DD57AA17300F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4DC038F08F7BA59376A86E14</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4DC038F08F7BA59376A86E14</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-SAMCache-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>505A518E7E3CA50C45088B03</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C0866F42ED27DB1194E7B9EC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54DEBD7117997A272E936F82</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3991C62DDE76786006902F42</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5A27A09C0D8C5B613C7AEFBB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAMCache-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>60B0B3E80D88E3D3AA00ED2E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>4BE3A9DF1063DD57AA17300F</string>
-				<string>169B5F13F97444535480CBC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>645B7BC470AC059F2C213AFA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8A37AF577183BB73E3B5EE6A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>671EE507361131261192FE63</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>68D0DFDAA69593FB37087426</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>344E4C30C39C9EF1C3554855</string>
-				<string>09801036C4D0591AD908A1F7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>7572F49A982430D3D7F3B482</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-SAMCache-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>763D1BC82F5FDA69C46DAE20</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>79D4B8D0F89262BAF5766FC1</string>
-				<string>BD67050254FB7CE9EF1E2CAC</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>79D4B8D0F89262BAF5766FC1</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>7FB32228DD775075C2912A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D0C01C3BBF4DE413BB2DF122</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8041EA5AA2D9A77ED6F78EDC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AD07E6B0E0FED00F72AAC54F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8A37AF577183BB73E3B5EE6A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>19864A5D36EE988D0D6ABB8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8BA62F5CC1266B02DC6F9E19</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>96AF83336B3C3CD6FCF4C366</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8BA62F5CC1266B02DC6F9E19</string>
-				<string>A8BB0169520510D521EAAF2A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>97496E3ED306BCE2F24DEC6D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D609B68590EE01B6CAA3AC79</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>995FC62C1DCF885E4074C410</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2347B3D59EBBD961167F54ED</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9A6BCB3B97F7BFE24C7654CB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>441649065264F129B0695A14</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EC088930F94325072ED90C79</string>
-				<string>05F46298335D8BDCF2D37577</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>370F20A2E809FA45BAE08E66</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>8BA62F5CC1266B02DC6F9E19</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>A339AA9F1FC5AD2B28E71321</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>A8BB0169520510D521EAAF2A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-SAMCache.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A97D6B4109560DD0AC27B5D4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AD07E6B0E0FED00F72AAC54F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>BD67050254FB7CE9EF1E2CAC</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BE0E71DB7C8E238A6ABFC2F7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A339AA9F1FC5AD2B28E71321</string>
-				<string>C195380392F333D4E2F4A70C</string>
-				<string>505A518E7E3CA50C45088B03</string>
-				<string>96AF83336B3C3CD6FCF4C366</string>
-				<string>7FB32228DD775075C2912A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C0866F42ED27DB1194E7B9EC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>19864A5D36EE988D0D6ABB8F</string>
-				<string>C19F50857043179CF249F8E7</string>
-				<string>49DA0B80A0A7C73DFDA3B637</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SAMCache</string>
-			<key>path</key>
-			<string>SAMCache</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C195380392F333D4E2F4A70C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8041EA5AA2D9A77ED6F78EDC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C19F50857043179CF249F8E7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SAMCache.m</string>
-			<key>path</key>
-			<string>SAMCache/SAMCache.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1B5B499686F2137D4683020</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C42FA4621005515D39669502</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AD07E6B0E0FED00F72AAC54F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D0C01C3BBF4DE413BB2DF122</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1158CFAE328197123EDA2470</string>
-				<string>C1B5B499686F2137D4683020</string>
-				<string>3991C62DDE76786006902F42</string>
-				<string>A97D6B4109560DD0AC27B5D4</string>
-				<string>671EE507361131261192FE63</string>
-				<string>2347B3D59EBBD961167F54ED</string>
-				<string>D609B68590EE01B6CAA3AC79</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>path</key>
-			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D237A9A216436202217AFE32</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3278EF01AE6DB70AF9E9E975</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>4B8CF82F9D5CCE2DC365806F</string>
-			<key>remoteInfo</key>
-			<string>Pods-SAMCache</string>
-		</dict>
-		<key>D609B68590EE01B6CAA3AC79</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E103F57A4A028D52420259B5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3B456BFA13A62931F9D852D0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EC088930F94325072ED90C79</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>54DEBD7117997A272E936F82</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FAC13A3BC54D00C7706E6AE7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAMCache.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>3278EF01AE6DB70AF9E9E975</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031FC9963C53252BE7420041 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7F78F7F5CEA469CF1368 /* JSONAPI.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		06B11DD72AB886971BF5F405 /* JSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCE4DBC849E8F1DDC22DDFF /* JSONValueTransformer.h */; };
+		0C9A8A096E300BA73F06B3FC /* SAMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56474C227E2855FC7ECF3347 /* SAMCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		12B56A7F2817BA0B3292A215 /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E300B911ADCF0CEBEF4A740C /* JSONModelArray.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1664E76B61C6E0214A619C1E /* JSONModelArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 765C585C35A491157BBDD8DA /* JSONModelArray.h */; };
+		1B2F69FFFE8EF303E2EE6A97 /* JSONAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F6DC93DB3BE3E6F71652BA /* JSONAPI.h */; };
+		253DE285CA03E79D701AE50F /* JSONKeyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C1FF11B33FF5D968E79A5873 /* JSONKeyMapper.h */; };
+		30247EE7D66C9AB3F151C510 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9238787946CDA4004CB6A4E /* JSONModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		391139D9A0C8D95504A1CE59 /* JSONModelError.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9A529DF1671838C8539C63 /* JSONModelError.h */; };
+		3A9EC84EE428EADB99D27DA3 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BCCDCA377868F7CAE59D56 /* JSONHTTPClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3B4DB4B1D8749BBC4AD1C3A4 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A16657AA0D8C0C55597A21E /* JSONValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		41EBE9384EE530F6CDA1053D /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C98D09B525B20845992DEC /* Pods-dummy.m */; };
+		426237F1EFD01B20E9CAF189 /* Pods-SAMCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46544C3CABB33C2734FEA4A1 /* Pods-SAMCache-dummy.m */; };
+		451593D3B621385A6DC53F19 /* JSONModel+networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A5A87E9583A9F96C5A4686 /* JSONModel+networking.h */; };
+		49282EC74C81D771272A2B04 /* JSONHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E3AD75AA2D74566CEDFB50B7 /* JSONHTTPClient.h */; };
+		6DF9715325E7F5615EB50F84 /* JSONModelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1579E80C1BAE91F9ECF51888 /* JSONModelLib.h */; };
+		72A909F3A98B2AEC43CD8256 /* Pods-JSONModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C39837975926B950E80354F /* Pods-JSONModel-dummy.m */; };
+		A6B52DCF5ADC308B369F6694 /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE9CFB2688A83CA29CFE28 /* NSArray+JSONModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AF20641590B74A7FC81361E1 /* JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BDD33DCB5B9C1C41B6D977 /* JSONModel.h */; };
+		C4D9C9950C6E3FB0AC77D2B2 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E704076318DA0CB3B6E5C5 /* JSONModel+networking.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CA101AC00FB03709FB5C7B1D /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF7EB28085A4E8D06617892 /* JSONModelClassProperty.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CF9E36815DB414DD7B0D62DA /* SAMCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B19B93835917A4045F88496F /* SAMCache.h */; };
+		D4E43B21CB044F7AB574DDD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3149260A0B643CFB3C936EA0 /* Foundation.framework */; };
+		DBE689E8DB62DC616F4C9071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3149260A0B643CFB3C936EA0 /* Foundation.framework */; };
+		DBF3147D37045CB172B5C8E6 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E8D39DD29D0E8B7CC856E /* JSONModelError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E12DFE65D95C2D46F93B44CF /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E0E4B409B83EF616A72CD0 /* JSONKeyMapper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E41567963F157C4CC589B1E1 /* JSONModelClassProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DEA901F402D3037F0F5518 /* JSONModelClassProperty.h */; };
+		E63C3A00CDE20776FABBD9D8 /* NSArray+JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A5324BF22255B26A927FE4 /* NSArray+JSONModel.h */; };
+		FCFA5C4AA27D26B9660706A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3149260A0B643CFB3C936EA0 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87F1F255191A55EAEA1713FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8022AE1716FE76478DA4AAD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAFE1A7EC47DE0446F82E655;
+			remoteInfo = "Pods-SAMCache";
+		};
+		A923C53F4356610F073EB2D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8022AE1716FE76478DA4AAD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9D622C94CEC6A25360DCDD6;
+			remoteInfo = "Pods-JSONModel";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E67281785739BBAFA406C6 /* Pods-SAMCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SAMCache.xcconfig"; sourceTree = "<group>"; };
+		04215D059E349D44B936695E /* Pods-JSONModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSONModel.xcconfig"; sourceTree = "<group>"; };
+		0BCE4DBC849E8F1DDC22DDFF /* JSONValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONValueTransformer.h; path = JSONModel/JSONModelTransformations/JSONValueTransformer.h; sourceTree = "<group>"; };
+		0BEE9CFB2688A83CA29CFE28 /* NSArray+JSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+JSONModel.m"; path = "JSONModel/JSONModelCategories/NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		0D8AE82B95C925E79C84667B /* Pods-SAMCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SAMCache-prefix.pch"; sourceTree = "<group>"; };
+		10E0E4B409B83EF616A72CD0 /* JSONKeyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONKeyMapper.m; path = JSONModel/JSONModelTransformations/JSONKeyMapper.m; sourceTree = "<group>"; };
+		119B65347B0BBA9E42872AA6 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		1579E80C1BAE91F9ECF51888 /* JSONModelLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelLib.h; path = JSONModel/JSONModelLib.h; sourceTree = "<group>"; };
+		3149260A0B643CFB3C936EA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33F58B96A0F3110C6EE5E546 /* libPods-JSONModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSONModel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A5A87E9583A9F96C5A4686 /* JSONModel+networking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JSONModel+networking.h"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.h"; sourceTree = "<group>"; };
+		46544C3CABB33C2734FEA4A1 /* Pods-SAMCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SAMCache-dummy.m"; sourceTree = "<group>"; };
+		4690F09F21614FAB1C508A4A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		46C8221185498632D66A35ED /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4A9A529DF1671838C8539C63 /* JSONModelError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelError.h; path = JSONModel/JSONModel/JSONModelError.h; sourceTree = "<group>"; };
+		4F85EBFA88043866AF3489FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		56474C227E2855FC7ECF3347 /* SAMCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMCache.m; path = SAMCache/SAMCache.m; sourceTree = "<group>"; };
+		56EE610DFDB073B7931825F0 /* Pods-SAMCache-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SAMCache-Private.xcconfig"; sourceTree = "<group>"; };
+		6B24E2EC10B7724F54F07912 /* Pods-JSONModel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSONModel-Private.xcconfig"; sourceTree = "<group>"; };
+		71C98D09B525B20845992DEC /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		72BCCDCA377868F7CAE59D56 /* JSONHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONHTTPClient.m; path = JSONModel/JSONModelNetworking/JSONHTTPClient.m; sourceTree = "<group>"; };
+		765C585C35A491157BBDD8DA /* JSONModelArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelArray.h; path = JSONModel/JSONModel/JSONModelArray.h; sourceTree = "<group>"; };
+		76DEA901F402D3037F0F5518 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelClassProperty.h; path = JSONModel/JSONModel/JSONModelClassProperty.h; sourceTree = "<group>"; };
+		77A5324BF22255B26A927FE4 /* NSArray+JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+JSONModel.h"; path = "JSONModel/JSONModelCategories/NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		7A16657AA0D8C0C55597A21E /* JSONValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONValueTransformer.m; path = JSONModel/JSONModelTransformations/JSONValueTransformer.m; sourceTree = "<group>"; };
+		87BDD33DCB5B9C1C41B6D977 /* JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = JSONModel/JSONModel/JSONModel.h; sourceTree = "<group>"; };
+		894E8D39DD29D0E8B7CC856E /* JSONModelError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelError.m; path = JSONModel/JSONModel/JSONModelError.m; sourceTree = "<group>"; };
+		8C39837975926B950E80354F /* Pods-JSONModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JSONModel-dummy.m"; sourceTree = "<group>"; };
+		A3F6DC93DB3BE3E6F71652BA /* JSONAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONAPI.h; path = JSONModel/JSONModelNetworking/JSONAPI.h; sourceTree = "<group>"; };
+		B19B93835917A4045F88496F /* SAMCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMCache.h; path = SAMCache/SAMCache.h; sourceTree = "<group>"; };
+		C1FF11B33FF5D968E79A5873 /* JSONKeyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONKeyMapper.h; path = JSONModel/JSONModelTransformations/JSONKeyMapper.h; sourceTree = "<group>"; };
+		CE1C409CFD04DFB0BD4E737E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		CFF7EB28085A4E8D06617892 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelClassProperty.m; path = JSONModel/JSONModel/JSONModelClassProperty.m; sourceTree = "<group>"; };
+		D0E704076318DA0CB3B6E5C5 /* JSONModel+networking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "JSONModel+networking.m"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.m"; sourceTree = "<group>"; };
+		D2E05A68390D3A9A88C2057D /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D617EE9440E6F3924C1D8055 /* libPods-SAMCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SAMCache.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2C7F78F7F5CEA469CF1368 /* JSONAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONAPI.m; path = JSONModel/JSONModelNetworking/JSONAPI.m; sourceTree = "<group>"; };
+		E264F57784055CFD14D3BC3E /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		E300B911ADCF0CEBEF4A740C /* JSONModelArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelArray.m; path = JSONModel/JSONModel/JSONModelArray.m; sourceTree = "<group>"; };
+		E3AD75AA2D74566CEDFB50B7 /* JSONHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONHTTPClient.h; path = JSONModel/JSONModelNetworking/JSONHTTPClient.h; sourceTree = "<group>"; };
+		EBDD10072416FE6C2EC0DC68 /* Pods-JSONModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JSONModel-prefix.pch"; sourceTree = "<group>"; };
+		F9238787946CDA4004CB6A4E /* JSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = JSONModel/JSONModel/JSONModel.m; sourceTree = "<group>"; };
+		FD6C89D72214D8BF03165DB8 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89CBA486FAE526EEEA6C8817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFA5C4AA27D26B9660706A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A512C183BB926F453D3B4345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E43B21CB044F7AB574DDD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4EF499990FF0F7CAC0989C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE689E8DB62DC616F4C9071 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0212C6A611A48154A1061002 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3149260A0B643CFB3C936EA0 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		0721A477F736A0AFD54102E7 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3F6DC93DB3BE3E6F71652BA /* JSONAPI.h */,
+				DB2C7F78F7F5CEA469CF1368 /* JSONAPI.m */,
+				E3AD75AA2D74566CEDFB50B7 /* JSONHTTPClient.h */,
+				72BCCDCA377868F7CAE59D56 /* JSONHTTPClient.m */,
+				C1FF11B33FF5D968E79A5873 /* JSONKeyMapper.h */,
+				10E0E4B409B83EF616A72CD0 /* JSONKeyMapper.m */,
+				87BDD33DCB5B9C1C41B6D977 /* JSONModel.h */,
+				F9238787946CDA4004CB6A4E /* JSONModel.m */,
+				36A5A87E9583A9F96C5A4686 /* JSONModel+networking.h */,
+				D0E704076318DA0CB3B6E5C5 /* JSONModel+networking.m */,
+				765C585C35A491157BBDD8DA /* JSONModelArray.h */,
+				E300B911ADCF0CEBEF4A740C /* JSONModelArray.m */,
+				76DEA901F402D3037F0F5518 /* JSONModelClassProperty.h */,
+				CFF7EB28085A4E8D06617892 /* JSONModelClassProperty.m */,
+				4A9A529DF1671838C8539C63 /* JSONModelError.h */,
+				894E8D39DD29D0E8B7CC856E /* JSONModelError.m */,
+				1579E80C1BAE91F9ECF51888 /* JSONModelLib.h */,
+				0BCE4DBC849E8F1DDC22DDFF /* JSONValueTransformer.h */,
+				7A16657AA0D8C0C55597A21E /* JSONValueTransformer.m */,
+				77A5324BF22255B26A927FE4 /* NSArray+JSONModel.h */,
+				0BEE9CFB2688A83CA29CFE28 /* NSArray+JSONModel.m */,
+				3BF5B37C4C775F4CCC59E449 /* Support Files */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		31D5A77F5227CE8B007DB069 = {
+			isa = PBXGroup;
+			children = (
+				46C8221185498632D66A35ED /* Podfile */,
+				3E67D2FE0217E31D8EF44754 /* Frameworks */,
+				7B3CA576EA0CF8F7A7C80ED3 /* Pods */,
+				8306203E6948F54BF70A35D4 /* Products */,
+				D3C43E736252E4F8A6BEA9C8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		3BF5B37C4C775F4CCC59E449 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				04215D059E349D44B936695E /* Pods-JSONModel.xcconfig */,
+				6B24E2EC10B7724F54F07912 /* Pods-JSONModel-Private.xcconfig */,
+				8C39837975926B950E80354F /* Pods-JSONModel-dummy.m */,
+				EBDD10072416FE6C2EC0DC68 /* Pods-JSONModel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-JSONModel";
+			sourceTree = "<group>";
+		};
+		3E67D2FE0217E31D8EF44754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0212C6A611A48154A1061002 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E061F0C5CF7DD9C58906EF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2E05A68390D3A9A88C2057D /* Pods-acknowledgements.markdown */,
+				FD6C89D72214D8BF03165DB8 /* Pods-acknowledgements.plist */,
+				71C98D09B525B20845992DEC /* Pods-dummy.m */,
+				119B65347B0BBA9E42872AA6 /* Pods-environment.h */,
+				E264F57784055CFD14D3BC3E /* Pods-resources.sh */,
+				CE1C409CFD04DFB0BD4E737E /* Pods.debug.xcconfig */,
+				4690F09F21614FAB1C508A4A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		739F895B53948D5DB0D55C4D /* SAMCache */ = {
+			isa = PBXGroup;
+			children = (
+				B19B93835917A4045F88496F /* SAMCache.h */,
+				56474C227E2855FC7ECF3347 /* SAMCache.m */,
+				DB72D9917DF0EC2C5ECAEACC /* Support Files */,
+			);
+			path = SAMCache;
+			sourceTree = "<group>";
+		};
+		7B3CA576EA0CF8F7A7C80ED3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0721A477F736A0AFD54102E7 /* JSONModel */,
+				739F895B53948D5DB0D55C4D /* SAMCache */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8306203E6948F54BF70A35D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F85EBFA88043866AF3489FB /* libPods.a */,
+				33F58B96A0F3110C6EE5E546 /* libPods-JSONModel.a */,
+				D617EE9440E6F3924C1D8055 /* libPods-SAMCache.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3C43E736252E4F8A6BEA9C8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E061F0C5CF7DD9C58906EF4 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DB72D9917DF0EC2C5ECAEACC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01E67281785739BBAFA406C6 /* Pods-SAMCache.xcconfig */,
+				56EE610DFDB073B7931825F0 /* Pods-SAMCache-Private.xcconfig */,
+				46544C3CABB33C2734FEA4A1 /* Pods-SAMCache-dummy.m */,
+				0D8AE82B95C925E79C84667B /* Pods-SAMCache-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SAMCache";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DBD2C59B52F1045A85DF4AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9E36815DB414DD7B0D62DA /* SAMCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89D71A992BBCDD7E43290FB8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2F69FFFE8EF303E2EE6A97 /* JSONAPI.h in Headers */,
+				49282EC74C81D771272A2B04 /* JSONHTTPClient.h in Headers */,
+				253DE285CA03E79D701AE50F /* JSONKeyMapper.h in Headers */,
+				451593D3B621385A6DC53F19 /* JSONModel+networking.h in Headers */,
+				AF20641590B74A7FC81361E1 /* JSONModel.h in Headers */,
+				1664E76B61C6E0214A619C1E /* JSONModelArray.h in Headers */,
+				E41567963F157C4CC589B1E1 /* JSONModelClassProperty.h in Headers */,
+				391139D9A0C8D95504A1CE59 /* JSONModelError.h in Headers */,
+				6DF9715325E7F5615EB50F84 /* JSONModelLib.h in Headers */,
+				06B11DD72AB886971BF5F405 /* JSONValueTransformer.h in Headers */,
+				E63C3A00CDE20776FABBD9D8 /* NSArray+JSONModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		78E2EA2F1235623F43037BD3 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62F5309B1D11C45955834899 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				1B8CCDD060A9BAAFDE5B3898 /* Sources */,
+				A512C183BB926F453D3B4345 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41B4AE15BD45C3EB6CC6E4AA /* PBXTargetDependency */,
+				F6E5130AD1ADB89B9F0937CD /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 4F85EBFA88043866AF3489FB /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BAFE1A7EC47DE0446F82E655 /* Pods-SAMCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9890E9FACE7BA94BFB8FD27 /* Build configuration list for PBXNativeTarget "Pods-SAMCache" */;
+			buildPhases = (
+				DA30E2729E8F634A081FAD62 /* Sources */,
+				89CBA486FAE526EEEA6C8817 /* Frameworks */,
+				3DBD2C59B52F1045A85DF4AF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SAMCache";
+			productName = "Pods-SAMCache";
+			productReference = D617EE9440E6F3924C1D8055 /* libPods-SAMCache.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C9D622C94CEC6A25360DCDD6 /* Pods-JSONModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E630752EA07896EDE608FE6D /* Build configuration list for PBXNativeTarget "Pods-JSONModel" */;
+			buildPhases = (
+				F4E54C899F16C77EE169DBBD /* Sources */,
+				B4EF499990FF0F7CAC0989C6 /* Frameworks */,
+				89D71A992BBCDD7E43290FB8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JSONModel";
+			productName = "Pods-JSONModel";
+			productReference = 33F58B96A0F3110C6EE5E546 /* libPods-JSONModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8022AE1716FE76478DA4AAD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 981772798044FE702077C1E4 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 31D5A77F5227CE8B007DB069;
+			productRefGroup = 8306203E6948F54BF70A35D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78E2EA2F1235623F43037BD3 /* Pods */,
+				C9D622C94CEC6A25360DCDD6 /* Pods-JSONModel */,
+				BAFE1A7EC47DE0446F82E655 /* Pods-SAMCache */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B8CCDD060A9BAAFDE5B3898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EBE9384EE530F6CDA1053D /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA30E2729E8F634A081FAD62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426237F1EFD01B20E9CAF189 /* Pods-SAMCache-dummy.m in Sources */,
+				0C9A8A096E300BA73F06B3FC /* SAMCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E54C899F16C77EE169DBBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031FC9963C53252BE7420041 /* JSONAPI.m in Sources */,
+				3A9EC84EE428EADB99D27DA3 /* JSONHTTPClient.m in Sources */,
+				E12DFE65D95C2D46F93B44CF /* JSONKeyMapper.m in Sources */,
+				C4D9C9950C6E3FB0AC77D2B2 /* JSONModel+networking.m in Sources */,
+				30247EE7D66C9AB3F151C510 /* JSONModel.m in Sources */,
+				12B56A7F2817BA0B3292A215 /* JSONModelArray.m in Sources */,
+				CA101AC00FB03709FB5C7B1D /* JSONModelClassProperty.m in Sources */,
+				DBF3147D37045CB172B5C8E6 /* JSONModelError.m in Sources */,
+				3B4DB4B1D8749BBC4AD1C3A4 /* JSONValueTransformer.m in Sources */,
+				A6B52DCF5ADC308B369F6694 /* NSArray+JSONModel.m in Sources */,
+				72A909F3A98B2AEC43CD8256 /* Pods-JSONModel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41B4AE15BD45C3EB6CC6E4AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JSONModel";
+			target = C9D622C94CEC6A25360DCDD6 /* Pods-JSONModel */;
+			targetProxy = A923C53F4356610F073EB2D6 /* PBXContainerItemProxy */;
+		};
+		F6E5130AD1ADB89B9F0937CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SAMCache";
+			target = BAFE1A7EC47DE0446F82E655 /* Pods-SAMCache */;
+			targetProxy = 87F1F255191A55EAEA1713FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AB67286F3DE2CB5FA7C4854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		798B16E23056FF99CF1CDA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56EE610DFDB073B7931825F0 /* Pods-SAMCache-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SAMCache/Pods-SAMCache-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9E0ACA40B686637B167B5EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B24E2EC10B7724F54F07912 /* Pods-JSONModel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JSONModel/Pods-JSONModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9F97C4E63F9EBE09580768E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4690F09F21614FAB1C508A4A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A1D772B2CACF12D70AC4C9CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B24E2EC10B7724F54F07912 /* Pods-JSONModel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JSONModel/Pods-JSONModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD7D471C309325459E624837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1C409CFD04DFB0BD4E737E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E2CBE21CAE87E144A40A36D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56EE610DFDB073B7931825F0 /* Pods-SAMCache-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SAMCache/Pods-SAMCache-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E460BCD89281D4FF3805497C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62F5309B1D11C45955834899 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7D471C309325459E624837 /* Debug */,
+				9F97C4E63F9EBE09580768E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		981772798044FE702077C1E4 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB67286F3DE2CB5FA7C4854 /* Debug */,
+				E460BCD89281D4FF3805497C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E630752EA07896EDE608FE6D /* Build configuration list for PBXNativeTarget "Pods-JSONModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D772B2CACF12D70AC4C9CE /* Debug */,
+				9E0ACA40B686637B167B5EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9890E9FACE7BA94BFB8FD27 /* Build configuration list for PBXNativeTarget "Pods-SAMCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CBE21CAE87E144A40A36D5 /* Debug */,
+				798B16E23056FF99CF1CDA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8022AE1716FE76478DA4AAD2 /* Project object */;
+}

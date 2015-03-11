@@ -1,10 +1,13 @@
 PODS:
+  - JSONModel (1.0.2)
   - SAMCache (0.3.0)
 
 DEPENDENCIES:
+  - JSONModel
   - SAMCache
 
 SPEC CHECKSUMS:
+  JSONModel: cbdef0fdff1cc70e913a860861d3072860efd3a1
   SAMCache: ab96161f1938a85b0fd426958fc7f36e29a9fe27
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.0

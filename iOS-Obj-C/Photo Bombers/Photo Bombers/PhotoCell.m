@@ -11,10 +11,10 @@
 
 @implementation PhotoCell
 
-- (void)setPhoto:(NSDictionary *)photo {
+- (void)setPhoto:(NodeWallpaper *)photo {
     _photo = photo;
     
-    NSURL *url = [[NSURL alloc] initWithString:_photo[@"images"][@"thumbnail"][@"url"]];
+    NSURL *url = [[NSURL alloc] initWithString:_photo.thumbUrl];
     [self downloadPhotoWithURL:url];
 }
 
@@ -38,7 +38,7 @@
 
 
 - (void)downloadPhotoWithURL:(NSURL *)url {
-    NSString *key = [[NSString alloc] initWithFormat:@"%@-thumbail", self.photo[@"id"]];
+    NSString *key = [[NSString alloc] initWithFormat:@"%@", self.photo.thumbUrl];
     
     UIImage *photo = [[SAMCache sharedCache] imageForKey:key];
     

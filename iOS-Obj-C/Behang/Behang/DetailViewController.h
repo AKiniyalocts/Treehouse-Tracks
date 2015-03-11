@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NodeSource.h"
 
 @interface DetailViewController : UICollectionViewController
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionGrid;
-@property (strong, nonatomic) NSDictionary *walls;
+@property (strong, nonatomic) NodeCategory *nodeCategory;
 
 @end
 

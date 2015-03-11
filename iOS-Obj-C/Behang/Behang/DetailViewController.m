@@ -19,47 +19,33 @@
     layout.itemSize = CGSizeMake(106.0, 106.0);
     layout.minimumInteritemSpacing = 1.0;
     layout.minimumLineSpacing = 1.0;
-    
+    NSLog(@"initialized grid");
     return (self = [super initWithCollectionViewLayout:layout]);
     
-    
 }
 
--(void)loadView{
+-(void)loadView{    
     [self.collectionGrid registerClass:[PhotoCell class] forCellWithReuseIdentifier:@"photo"];
+    self.collectionGrid.backgroundColor = [UIColor whiteColor];
     
-    //NSMutableArray *mutable = [[NSArray alloc] init];
-    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.collectionGrid reloadData];
+    });
     
 }
-
-
-
-- (void)configureView {
-    // Update the user interface for the detail item.
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake(106.0, 106.0);
-    layout.minimumInteritemSpacing = 1.0;
-    layout.minimumLineSpacing = 1.0;
-    
-    
-    
-    [self.collectionGrid setCollectionViewLayout:layout];
-    
-    
-    
-    }
-
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [self.walls count];
+    return [self.nodeCategory.wallpaper count];
 }
 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photo" forIndexPath:indexPath];
+    NSInteger index = indexPath.row;
     
+    cell.photo = self.nodeCategory.wallpaper[index];
+
     //cell.photo = self.walls[indexPath.row];
     
     return cell;
@@ -67,6 +53,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

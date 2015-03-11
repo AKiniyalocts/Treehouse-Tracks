@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04181A581AAF893000068538 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04181A571AAF893000068538 /* PhotoCell.m */; };
+		04181A5B1AB09AD200068538 /* NodeSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 04181A5A1AB09AD200068538 /* NodeSource.m */; };
+		04181A5E1AB09CEA00068538 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 04181A5D1AB09CEA00068538 /* Node.m */; };
 		046B3EE11AADE73400278DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3EE01AADE73400278DCD /* main.m */; };
 		046B3EE41AADE73400278DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3EE31AADE73400278DCD /* AppDelegate.m */; };
 		046B3EE71AADE73400278DCD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3EE61AADE73400278DCD /* MasterViewController.m */; };
@@ -35,6 +37,10 @@
 /* Begin PBXFileReference section */
 		04181A561AAF893000068538 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoCell.h; path = "../../Photo Bombers/Photo Bombers/PhotoCell.h"; sourceTree = "<group>"; };
 		04181A571AAF893000068538 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoCell.m; path = "../../Photo Bombers/Photo Bombers/PhotoCell.m"; sourceTree = "<group>"; };
+		04181A591AB09AD200068538 /* NodeSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeSource.h; sourceTree = "<group>"; };
+		04181A5A1AB09AD200068538 /* NodeSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeSource.m; sourceTree = "<group>"; };
+		04181A5C1AB09CEA00068538 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		04181A5D1AB09CEA00068538 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		046B3EDB1AADE73400278DCD /* Behang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Behang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B3EDF1AADE73400278DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046B3EE01AADE73400278DCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,7 +56,7 @@
 		046B3EF71AADE73400278DCD /* BehangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BehangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B3EFC1AADE73400278DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046B3EFD1AADE73400278DCD /* BehangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BehangTests.m; sourceTree = "<group>"; };
-		04832C631AAF630E0086FA2A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		04832C631AAF630E0086FA2A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		04832C641AAF641E0086FA2A /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
 		04832C651AAF641E0086FA2A /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
 		4410658DD4DBC121F11EAB28 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +129,10 @@
 				92374F741AAFC3D6009711DC /* NodeCategory.m */,
 				92374F761AAFC53C009711DC /* NodeWallpaper.h */,
 				92374F771AAFC53C009711DC /* NodeWallpaper.m */,
+				04181A591AB09AD200068538 /* NodeSource.h */,
+				04181A5A1AB09AD200068538 /* NodeSource.m */,
+				04181A5C1AB09CEA00068538 /* Node.h */,
+				04181A5D1AB09CEA00068538 /* Node.m */,
 			);
 			path = Behang;
 			sourceTree = "<group>";
@@ -309,7 +319,9 @@
 				92374F781AAFC53C009711DC /* NodeWallpaper.m in Sources */,
 				046B3EE41AADE73400278DCD /* AppDelegate.m in Sources */,
 				04832C661AAF641E0086FA2A /* ImageCell.m in Sources */,
+				04181A5B1AB09AD200068538 /* NodeSource.m in Sources */,
 				046B3EE71AADE73400278DCD /* MasterViewController.m in Sources */,
+				04181A5E1AB09CEA00068538 /* Node.m in Sources */,
 				046B3EE11AADE73400278DCD /* main.m in Sources */,
 				04181A581AAF893000068538 /* PhotoCell.m in Sources */,
 				046B3EEA1AADE73400278DCD /* DetailViewController.m in Sources */,
