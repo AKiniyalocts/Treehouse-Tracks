@@ -1,2 +1,3 @@
 pod 'SAMCache'
 pod 'JSONModel'
+pod 'AFNetworking'

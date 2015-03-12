@@ -11,7 +11,6 @@
 
 @interface DetailViewController : UICollectionViewController
 
-@property (strong, nonatomic) IBOutlet UICollectionView *collectionGrid;
 @property (strong, nonatomic) NodeCategory *nodeCategory;
 
 @end

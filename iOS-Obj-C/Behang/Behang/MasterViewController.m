@@ -33,9 +33,13 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [self refresh];
+    [self setNeedsStatusBarAppearanceUpdate];
     
     
 
+}
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)refresh {

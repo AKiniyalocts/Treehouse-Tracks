@@ -7,54 +7,53 @@
 //
 
 #import "DetailViewController.h"
+#import "SAMCache.h"
 #import "PhotoCell.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface DetailViewController ()
 @end
 
 @implementation DetailViewController
 
--(instancetype)init{
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake(106.0, 106.0);
-    layout.minimumInteritemSpacing = 1.0;
-    layout.minimumLineSpacing = 1.0;
-    NSLog(@"initialized grid");
-    return (self = [super initWithCollectionViewLayout:layout]);
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = self.nodeCategory.name;
+    
+    [self.collectionView registerClass:[PhotoCell class] forCellWithReuseIdentifier:@"photo"];
+    
+   
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
+    
+    NSInteger index = indexPath.row;
+    
+    NSLog(@"%@", self.nodeCategory.wallpaper[index]);
+    
     
 }
 
--(void)loadView{    
-    [self.collectionGrid registerClass:[PhotoCell class] forCellWithReuseIdentifier:@"photo"];
-    self.collectionGrid.backgroundColor = [UIColor whiteColor];
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.collectionGrid reloadData];
-    });
-    
-}
 
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return [self.nodeCategory.wallpaper count];
 }
 
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photo" forIndexPath:indexPath];
-    NSInteger index = indexPath.row;
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *identifier = @"photo";
+    PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    NodeWallpaper *wall = self.nodeCategory.wallpaper[indexPath.row];
     
-    cell.photo = self.nodeCategory.wallpaper[index];
-
-    //cell.photo = self.walls[indexPath.row];
+    NSURL *url = [[NSURL alloc] initWithString:wall.thumbUrl];
+    
+    NSLog(@"%@", url);
+    
+    [cell.imageView setImageWithURL:url];
+    
     
     return cell;
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {

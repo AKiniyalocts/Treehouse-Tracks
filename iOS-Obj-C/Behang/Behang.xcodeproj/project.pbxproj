@@ -19,6 +19,7 @@
 		046B3EF21AADE73400278DCD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046B3EF01AADE73400278DCD /* LaunchScreen.xib */; };
 		046B3EFE1AADE73400278DCD /* BehangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B3EFD1AADE73400278DCD /* BehangTests.m */; };
 		04832C661AAF641E0086FA2A /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04832C651AAF641E0086FA2A /* ImageCell.m */; };
+		04C9B7E21AB215EC006F6EB8 /* treehouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C9B7E11AB215EC006F6EB8 /* treehouse.png */; };
 		91E7782535781D016B575CC7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4410658DD4DBC121F11EAB28 /* libPods.a */; };
 		92374F751AAFC3D6009711DC /* NodeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 92374F741AAFC3D6009711DC /* NodeCategory.m */; };
 		92374F781AAFC53C009711DC /* NodeWallpaper.m in Sources */ = {isa = PBXBuildFile; fileRef = 92374F771AAFC53C009711DC /* NodeWallpaper.m */; };
@@ -59,6 +60,7 @@
 		04832C631AAF630E0086FA2A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		04832C641AAF641E0086FA2A /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
 		04832C651AAF641E0086FA2A /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		04C9B7E11AB215EC006F6EB8 /* treehouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = treehouse.png; path = "../../Photo Bombers/Photo Bombers/Images.xcassets/Treehouse.imageset/treehouse.png"; sourceTree = "<group>"; };
 		4410658DD4DBC121F11EAB28 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		92374F731AAFC3D6009711DC /* NodeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeCategory.h; sourceTree = "<group>"; };
 		92374F741AAFC3D6009711DC /* NodeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeCategory.m; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		046B3EDE1AADE73400278DCD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04C9B7E11AB215EC006F6EB8 /* treehouse.png */,
 				046B3EDF1AADE73400278DCD /* Info.plist */,
 				046B3EE01AADE73400278DCD /* main.m */,
 			);
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046B3EED1AADE73400278DCD /* Main.storyboard in Resources */,
+				04C9B7E21AB215EC006F6EB8 /* treehouse.png in Resources */,
 				046B3EF21AADE73400278DCD /* LaunchScreen.xib in Resources */,
 				046B3EEF1AADE73400278DCD /* Images.xcassets in Resources */,
 			);
