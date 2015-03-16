@@ -10,8 +10,12 @@
 #import "SAMCache.h"
 #import "PhotoCell.h"
 #import "UIImageView+AFNetworking.h"
+#import "SingleImageController.h"
+
+long selected;
 
 @interface DetailViewController ()
+
 @end
 
 @implementation DetailViewController
@@ -26,19 +30,37 @@
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
+    if([segue.identifier isEqualToString:@"showSingle"]){
+        
+        NodeWallpaper *wall = self.nodeCategory.wallpaper[selected];
+        
+        NSURL *url = [[NSURL alloc] initWithString:wall.url];
+        
+        SingleImageController *singleImageController = (SingleImageController *) segue.destinationViewController;
+        singleImageController.imageURL = url;
     
-    NSInteger index = indexPath.row;
-    
-    NSLog(@"%@", self.nodeCategory.wallpaper[index]);
-    
-    
+    }
 }
 
 
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return [self.nodeCategory.wallpaper count];
+}
+-  (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"%ld", (long)indexPath.item);
+    selected = (long)indexPath.item;
+
+    
+    NodeWallpaper *wall = self.nodeCategory.wallpaper[selected];
+    
+    NSURL *url = [[NSURL alloc] initWithString:wall.url];
+    
+    SingleImageController *singleImageController = [[SingleImageController alloc] init];
+    
+    singleImageController.imageURL = url;
+    
+    [self presentViewController:singleImageController animated:YES completion:nil];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -54,11 +76,6 @@
     
     
     return cell;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

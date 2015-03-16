@@ -3,15 +3,15 @@
 //  SAMCache
 //
 //  Created by Sam Soffes on 10/31/11.
-//  Copyright (c) 2011-2014 Sam Soffes. All rights reserved.
+//  Copyright (c) 2011-2013 Sam Soffes. All rights reserved.
 //
 
 #import "SAMCache.h"
 
 @interface SAMCache ()
 @property (nonatomic, readwrite) NSString *name;
-@property (nonatomic, readwrite) NSString *directory;
 @property (nonatomic) NSCache *cache;
+@property (nonatomic) NSString *cacheDirectory;
 @property (nonatomic, readonly) NSFileManager *fileManager;
 @property (nonatomic) dispatch_queue_t callbackQueue;
 @property (nonatomic) dispatch_queue_t diskQueue;
@@ -22,15 +22,15 @@
 #pragma mark - Accessors
 
 @synthesize name = _name;
-@synthesize directory = _directory;
 @synthesize cache = _cache;
+@synthesize cacheDirectory = _cacheDirectory;
 @synthesize fileManager = _fileManager;
 @synthesize callbackQueue = _callbackQueue;
 @synthesize diskQueue = _diskQueue;
 
 - (NSCache *)cache {
 	if (!_cache) {
-		_cache = [[NSCache alloc] init];
+		_cache = [[NSCache alloc] init];;
 	}
 	return _cache;
 }
@@ -63,7 +63,7 @@
 	static SAMCache *sharedCache = nil;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
-		sharedCache = [[SAMCache alloc] initWithName:@"com.samsoffes.samcache.shared" directory:nil];
+		sharedCache = [[SAMCache alloc] initWithName:@"com.samsoffes.samcache.shared"];
 	});
 	return sharedCache;
 }
@@ -72,31 +72,17 @@
 #pragma mark - Initializing
 
 - (instancetype)initWithName:(NSString *)name {
-	return [self initWithName:name directory:nil];
-}
-
-- (instancetype)initWithName:(NSString *)name directory:(NSString *)directory {
-	NSParameterAssert(name);
-
 	if ((self = [super init])) {
 		self.name = [name copy];
 		self.cache.name = self.name;
 		self.callbackQueue = dispatch_queue_create([[name stringByAppendingString:@".callback"] cStringUsingEncoding:NSUTF8StringEncoding], DISPATCH_QUEUE_CONCURRENT);
 		self.diskQueue = dispatch_queue_create([[name stringByAppendingString:@".disk"] cStringUsingEncoding:NSUTF8StringEncoding], DISPATCH_QUEUE_SERIAL);
 
-		if (!directory) {
-			NSString *cachesDirectory = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-			directory = [cachesDirectory stringByAppendingFormat:@"/com.samsoffes.samcache/%@", self.name];
-		}
-		self.directory = directory;
+		NSString *cachesDirectory = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+		self.cacheDirectory = [cachesDirectory stringByAppendingFormat:@"/com.samsoffes.samcache/%@", self.name];
 
-		if (![self.fileManager fileExistsAtPath:self.directory]) {
-			NSError *error;
-			[self.fileManager createDirectoryAtPath:self.directory withIntermediateDirectories:YES attributes:nil error:&error];
-
-			if (error) {
-				NSLog(@"Failed to create caches directory: %@", error);
-			}
+		if (![self.fileManager fileExistsAtPath:self.cacheDirectory]) {
+			[self.fileManager createDirectoryAtPath:self.cacheDirectory withIntermediateDirectories:YES attributes:nil error:nil];
 		}
 	}
 	return self;
@@ -106,8 +92,6 @@
 #pragma mark - Getting a Cached Value
 
 - (id)objectForKey:(NSString *)key {
-	NSParameterAssert(key);
-
 	// Look for the object in the memory cache.
 	__block id object = [self.cache objectForKey:key];
 	if (object) {
@@ -139,8 +123,9 @@
 
 
 - (void)objectForKey:(NSString *)key usingBlock:(void (^)(id <NSCopying> object))block {
-	NSParameterAssert(key);
-	NSParameterAssert(block);
+	if (!block) {
+		return;
+	}
 
 	dispatch_async(self.callbackQueue, ^{
 		block([self objectForKey:key]);
@@ -149,8 +134,6 @@
 
 
 - (BOOL)objectExistsForKey:(NSString *)key {
-	NSParameterAssert(key);
-
 	__block BOOL exists = [self.cache objectForKey:key] != nil;
 	if (exists) {
 		return YES;
@@ -166,7 +149,10 @@
 #pragma mark - Adding and Removing Cached Values
 
 - (void)setObject:(id <NSCopying>)object forKey:(NSString *)key {
-	NSParameterAssert(key);
+	// Invalid without a key
+	if (!key) {
+		return;
+	}
 
 	// If there's no object, delete the key.
 	if (!object) {
@@ -185,8 +171,6 @@
 
 
 - (void)removeObjectForKey:(NSString *)key {
-	NSParameterAssert(key);
-
 	[self.cache removeObjectForKey:key];
 
 	dispatch_async(self.diskQueue, ^{
@@ -199,8 +183,8 @@
 	[self.cache removeAllObjects];
 
 	dispatch_async(self.diskQueue, ^{
-		for (NSString *path in [self.fileManager contentsOfDirectoryAtPath:self.directory error:nil]) {
-			[self.fileManager removeItemAtPath:[self.directory stringByAppendingPathComponent:path] error:nil];
+		for (NSString *path in [self.fileManager contentsOfDirectoryAtPath:self.cacheDirectory error:nil]) {
+			[self.fileManager removeItemAtPath:[self.cacheDirectory stringByAppendingPathComponent:path] error:nil];
 		}
 	});
 }
@@ -209,8 +193,6 @@
 #pragma mark - Accessing the Disk Cache
 
 - (NSString *)pathForKey:(NSString *)key {
-	NSParameterAssert(key);
-
 	if ([self objectExistsForKey:key]) {
 		return [self _pathForKey:key];
 	}
@@ -221,39 +203,37 @@
 #pragma mark - Subscripting
 
 - (id)objectForKeyedSubscript:(NSString *)key {
-	NSParameterAssert(key);
-
 	return [self objectForKey:(NSString *)key];
 }
 
 
 - (void)setObject:(id <NSCopying>)object forKeyedSubscript:(NSString *)key {
-	NSParameterAssert(key);
-
 	[self setObject:object forKey:key];
 }
 
 
 #pragma mark - Private
 
+//Remove illegals "Filename" Characters from the filename string
 - (NSString *)_sanitizeFileNameString:(NSString *)fileName {
-	NSParameterAssert(fileName);
+  static NSCharacterSet *illegalFileNameCharacters = nil;
 
-	static NSCharacterSet *illegalFileNameCharacters = nil;
 	static dispatch_once_t illegalCharacterCreationToken;
 	dispatch_once(&illegalCharacterCreationToken, ^{
-		illegalFileNameCharacters = [NSCharacterSet characterSetWithCharactersInString: @"\\?%*|\"<>:"];
+		illegalFileNameCharacters = [NSCharacterSet characterSetWithCharactersInString: @"/\\?%*|\"<>:/" ];
 	});
 
-	return [[fileName componentsSeparatedByCharactersInSet:illegalFileNameCharacters] componentsJoinedByString:@""];
+  if (!illegalFileNameCharacters) {
+    return fileName;
+  }
+
+	return [ [fileName componentsSeparatedByCharactersInSet: illegalFileNameCharacters] componentsJoinedByString: @""];
 }
 
 
 - (NSString *)_pathForKey:(NSString *)key {
-	NSParameterAssert(key);
-
 	key = [self _sanitizeFileNameString: key];
-	return [self.directory stringByAppendingPathComponent:key];
+	return [self.cacheDirectory stringByAppendingPathComponent:key];
 }
 
 @end
@@ -266,8 +246,6 @@
 @implementation SAMCache (UIImageAdditions)
 
 - (UIImage *)imageForKey:(NSString *)key {
-	NSParameterAssert(key);
-
 	key = [[self class] _keyForImageKey:key];
 
 	__block UIImage *image = [self.cache objectForKey:key];
@@ -292,9 +270,6 @@
 
 
 - (void)imageForKey:(NSString *)key usingBlock:(void (^)(UIImage *image))block {
-	NSParameterAssert(key);
-	NSParameterAssert(block);
-
 	key = [[self class] _keyForImageKey:key];
 
 	dispatch_sync(self.diskQueue, ^{
@@ -310,7 +285,10 @@
 
 
 - (void)setImage:(UIImage *)image forKey:(NSString *)key {
-	NSParameterAssert(key);
+	// Invalid without a key
+	if (!key) {
+		return;
+	}
 
 	// If there's no image, delete the key.
 	if (!image) {
@@ -332,22 +310,9 @@
 }
 
 
-- (BOOL)imageExistsForKey:(NSString *)key {
-	NSParameterAssert(key);
-	return [self objectExistsForKey:[[self class] _keyForImageKey:key]];
-}
-
-
-- (void)removeImageForKey:(NSString *)key {
-	NSParameterAssert(key);
-	[self removeImageForKey:[[self class] _keyForImageKey:key]];
-}
-
-
 #pragma mark - Private
 
 + (NSString *)_keyForImageKey:(NSString *)imageKey {
-	NSParameterAssert(imageKey);
 	NSString *scale = [[UIScreen mainScreen] scale] == 2.0f ? @"@2x" : @"";
 	return [imageKey stringByAppendingFormat:@"%@.png", scale];
 }

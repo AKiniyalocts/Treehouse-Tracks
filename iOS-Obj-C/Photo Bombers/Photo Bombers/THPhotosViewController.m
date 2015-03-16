@@ -7,8 +7,8 @@
 //
 
 #import "THPhotosViewController.h"
-#import "PhotoCell.h"
-
+#import "THPhotoCell.h"
+#import "DetailViewController.h"
 #import <SimpleAuth/SimpleAuth.h>
 
 @interface THPhotosViewController ()
@@ -32,23 +32,34 @@
     
     self.title = @"Photo Bombers";
     
-    [self.collectionView registerClass:[PhotoCell class] forCellWithReuseIdentifier:@"photo"];
+    [self.collectionView registerClass:[THPhotoCell class] forCellWithReuseIdentifier:@"photo"];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     self.accessToken = [userDefaults objectForKey:@"accessToken"];
     
     if (self.accessToken == nil) {
-        [SimpleAuth authorize:@"instagram" completion:^(NSDictionary *responseObject, NSError *error) {
+        [SimpleAuth authorize:@"instagram" options:@{@"scope": @[@"likes"]} completion:^(NSDictionary *responseObject, NSError *error) {
             
-            NSString *accessToken = responseObject[@"credentials"][@"token"];
+            self.accessToken = responseObject[@"credentials"][@"token"];
             
-            [userDefaults setObject:accessToken forKey:@"accessToken"];
+            [userDefaults setObject:self.accessToken forKey:@"accessToken"];
             [userDefaults synchronize];
+            
+            [self refresh];
         }];
     } else {
         [self refresh];
     }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+        NSDictionary *photo = self.photos[indexPath.row];
+        DetailViewController *viewController = [[DetailViewController alloc] init];
+        viewController.photo = photo;
+        
+        [self presentViewController:viewController animated:YES completion:nil];
 }
 
 
@@ -78,7 +89,7 @@
 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photo" forIndexPath:indexPath];
+    THPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photo" forIndexPath:indexPath];
     
     cell.backgroundColor = [UIColor lightGrayColor];
     cell.photo = self.photos[indexPath.row];
