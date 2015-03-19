@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045EBCAE1ABAFF940044C1A7 /* THPresentDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 045EBCAD1ABAFF940044C1A7 /* THPresentDetailTransition.m */; };
 		04736D131AB7119B001C0060 /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04736D121AB7119B001C0060 /* PhotoController.m */; };
 		04736D161AB72D15001C0060 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04736D151AB72D15001C0060 /* DetailViewController.m */; };
 		070BE8FE30EA4CB1BA6F7DB9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 304B0405F4624DBF840285BD /* libPods.a */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045EBCAC1ABAFF940044C1A7 /* THPresentDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPresentDetailTransition.h; sourceTree = "<group>"; };
+		045EBCAD1ABAFF940044C1A7 /* THPresentDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPresentDetailTransition.m; sourceTree = "<group>"; };
 		04736D111AB7119B001C0060 /* PhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoController.h; sourceTree = "<group>"; };
 		04736D121AB7119B001C0060 /* PhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
 		04736D141AB72D15001C0060 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				04736D121AB7119B001C0060 /* PhotoController.m */,
 				04736D141AB72D15001C0060 /* DetailViewController.h */,
 				04736D151AB72D15001C0060 /* DetailViewController.m */,
+				045EBCAC1ABAFF940044C1A7 /* THPresentDetailTransition.h */,
+				045EBCAD1ABAFF940044C1A7 /* THPresentDetailTransition.m */,
 			);
 			path = "Photo Bombers";
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				B33C30DA1897F89B00E29FB2 /* THAppDelegate.m in Sources */,
 				B33C30FA1897F90500E29FB2 /* THPhotosViewController.m in Sources */,
 				B33C31001898032B00E29FB2 /* THPhotoCell.m in Sources */,
+				045EBCAE1ABAFF940044C1A7 /* THPresentDetailTransition.m in Sources */,
 				B33C30D61897F89B00E29FB2 /* main.m in Sources */,
 				04736D131AB7119B001C0060 /* PhotoController.m in Sources */,
 				04736D161AB72D15001C0060 /* DetailViewController.m in Sources */,

@@ -13,6 +13,7 @@
 
 @property(nonatomic) UIImageView *imageView;
 
+@property(nonatomic) UIDynamicAnimator *animator;
 
 @end
 
@@ -23,7 +24,7 @@
     
     self.view.backgroundColor =  [UIColor whiteColor];
     
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -320.0, 320.0, 320.0)];
     [self.view addSubview:self.imageView];
     
     [PhotoController imageForPhoto:self.photo size:@"standard_resolution" completion:^(UIImage *image) {
@@ -35,12 +36,28 @@
     swipe.direction = UISwipeGestureRecognizerDirectionDown;
     
     [self.view addGestureRecognizer:swipe];
-
     
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    UISnapBehavior *snap = [[UISnapBehavior alloc] initWithItem:self.imageView snapToPoint:self.view.center];
+    
+    [self.animator addBehavior:snap];
 }
 
 - (void)close{
+    [self.animator removeAllBehaviors];
+    
+    UISnapBehavior *snap = [[UISnapBehavior alloc] initWithItem:self.imageView snapToPoint:CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMaxX(self.view.bounds))];
+    
+    [self.animator addBehavior:snap];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,16 +65,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) viewDidLayoutSubviews{
-    [super viewDidLayoutSubviews];
-    
-    CGSize size = self.view.bounds.size;
-    
-    CGSize imageSize = CGSizeMake(size.width, size.width);
-    
-    self.imageView.frame = CGRectMake(0.0, (size.height - imageSize.height) / 2.0, imageSize.width, imageSize.height);
-    
-}
+
 
 /*
 #pragma mark - Navigation

@@ -10,8 +10,9 @@
 #import "THPhotoCell.h"
 #import "DetailViewController.h"
 #import <SimpleAuth/SimpleAuth.h>
+#import "THPresentDetailTransition.h"
 
-@interface THPhotosViewController ()
+@interface THPhotosViewController () <UIViewControllerTransitioningDelegate>
 @property (nonatomic) NSString *accessToken;
 @property (nonatomic) NSArray *photos;
 @end
@@ -55,17 +56,20 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-        NSDictionary *photo = self.photos[indexPath.row];
-        DetailViewController *viewController = [[DetailViewController alloc] init];
-        viewController.photo = photo;
+    NSDictionary *photo = self.photos[indexPath.row];
+    DetailViewController *viewController = [[DetailViewController alloc] init];
+    viewController.modalPresentationStyle = UIModalPresentationCustom;
+    viewController.transitioningDelegate = self;
+    
+    viewController.photo = photo;
         
-        [self presentViewController:viewController animated:YES completion:nil];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 
 - (void)refresh {
     NSURLSession *session = [NSURLSession sharedSession];
-    NSString *urlString = [[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/tags/photobomb/media/recent?access_token=%@", self.accessToken];
+    NSString *urlString = [[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/tags/cats/media/recent?access_token=%@", self.accessToken];
     NSURL *url = [[NSURL alloc] initWithString:urlString];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
@@ -95,6 +99,10 @@
     cell.photo = self.photos[indexPath.row];
     
     return cell;
+}
+
+-(id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
+    return [[THPresentDetailTransition alloc] init];
 }
 
 @end
